@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene background="color: black">
+
+        <!--<a-sky src = "https://cdn.glitch.com/850dd813-e5e9-4dd0-9751-38981ae74172%2Fvia_lactea.png?v=1604296331712"></a-sky>-->
+
+        <!--Camera-->
+        <a-entity position="0 2 3">
+            <a-camera></a-camera>
+        </a-entity>
+
+        <a-entity position = "-6.5 1 0" rotation = "0 90 0" >
+            <a-box height = "0.15" width = "4" depth = "2" src = "wood.jpg" >
+            <a-entity position = "0 0 0.25">
+                <a-cylinder position = "0 0.5 -0.5" height = 0.06 radius = 0.2 src = "G.jpeg">
+                    <a-cone radius-bottom = "0.07" height = "0.1" position = "0 0.145 0" color= "#FFFC19" ></a-cone>
+                    <a-sphere position = "0 0.075 0" radius = "0.075" color = "#FFFC19" ></a-sphere>
+                </a-cylinder>
+                <a-cylinder position = "0.35 0.5 -0.35" height = 0.06 radius = 0.2 src = "G.jpeg" >
+                    <a-cone radius-bottom = "0.07" height = "0.1" position = "0 0.145 0" color= "#FFFC19" ></a-cone>
+                    <a-sphere position = "0 0.075 0" radius = "0.075" color = "#FFFC19" ></a-sphere>
+                </a-cylinder>
+                <a-cylinder position = "-0.35 0.5 -0.35" height = 0.06 radius = 0.2 src = "G.jpeg" >
+                    <a-cone radius-bottom = "0.07" height = "0.1" position = "0 0.145 0" color= "#FFFC19" ></a-cone>
+                    <a-sphere position = "0 0.075 0" radius = "0.075" color = "#FFFC19" ></a-sphere>
+                </a-cylinder>
+                <a-cylinder position = "-0.5 0.5 0" height = 0.06 radius = 0.2 src = "G.jpeg" >
+                    <a-cone radius-bottom = "0.07" height = "0.1" position = "0 0.145 0" color= "#FFFC19" ></a-cone>
+                    <a-sphere position = "0 0.075 0" radius = "0.075" color = "#FFFC19" ></a-sphere>
+                </a-cylinder>
+                <a-cylinder position = "0.5 0.5 0" height = 0.06 radius = 0.2 src = "G.jpeg" >
+                    <a-cone radius-bottom = "0.07" height = "0.1" position = "0 0.145 0" color= "#FFFC19" ></a-cone>
+                    <a-sphere position = "0 0.075 0" radius = "0.075" color = "#FFFC19" ></a-sphere>
+                </a-cylinder>
+                <a-cone radius-bottom = "0.15" height = "0.25" position = "0 0.65 0" src = "R.jpeg" ></a-cone>
+                <a-cone position = "0 0.5 0"  height = 0.05 radius-bottom = "0.45" radius-top = "0.55" src = "R.jpeg" ></a-cone>
+                <a-cylinder position = "0 0.25 0" height = "0.5" radius = "0.05" src = "R.jpeg"></a-cylinder>
+                <a-cylinder position = "0 0.5 0.7" height = "0.5" radius = "0.025" rotation = "90 0 0" src = "R.jpeg"></a-cylinder>
+                <a-cylinder position = "0 0.1 0" height = "0.05" radius = "0.35" src = "R.jpeg"></a-cylinder>
+                <a-torus position = "0 0.35 0.95" radius = "0.15" radius-tubular = "0.0125" arc = "270" rotation = "0 90 90" src = "R.jpeg"></a-torus>
+            </a-entity>
+            </a-box>
+        </a-entity>
+
+        <a-entity position = "-7.5 4 0" rotation = "0 90 0" visible = "true" >
+            <a-box height = "4" depth = 0.075 width = "3" src = "frame.jpeg" >
+                <a-plane height = "3.5" width = "2.5" position = "0 0 0.039" src = "Krishna.jpeg" ></a-plane>
+            </a-box>
+        </a-entity>
+
+        <a-entity position = "5.25 1 -1.5" rotation = "0 45 0" visible = "true" scale = "1.5 1.5 1.5">
+            <a-entity visible = "true" position = "0 0.25 -0.055" rotation = "-15 0 0">
+                <a-box height = "0.5" width = "1" depth = "0.05" color = "#616161">
+                    <a-plane height = "0.45" width = "0.9" position = "0 0 0.02575" src = "laptop.png"></a-plane>
+                </a-box>
+            </a-entity>
+            <a-cylinder hieght = "1" radius = "0.025" rotation = "0 0 90" color = "grey" ></a-cylinder>
+            <a-entity position = "0 0 0.25">
+                <a-box height = "0.05" width = "1" depth = "0.5" color = "#616161">
+                    <a-plane rotation = "-90 0 0" height = "0.5" width = "1" position = "0 0.0255 0" src = "laptopKB.jpg"></a-plane>
+                </a-box>
+            </a-entity>
+        </a-entity>        
+
+        <a-entity position = "5.5 0.5 0" visible = "true">
+            <a-entity position = "0.75 0 -3" >
+                <a-box src = ./sofa.jpeg position = "0 0 0" height = "1" width = "2.5" depth = "1"></a-box>
+                <a-box src = ./sofa.jpeg position = "0 0.75 0" height = "0.5" width = "2.5" depth = "1"></a-box>
+                <a-box src = ./sofa.jpeg position = "-1.5 0 0" height = "1" width = "0.5" depth = "1"></a-box>
+                <a-cylinder src = ./sofa.jpeg height = "1" radius = "0.5" position = "-1.25 0.5 0" rotation = "90 0 0"></a-cylinder>
+            </a-entity>
+            <a-box src = ./sofa.jpeg position = "0 0 0" height = "1" width = "2" depth = "5"></a-box>
+            <a-box src = ./sofa.jpeg position = "1.5 0.5 0" height = "1.5" width = "1" depth = "5">
+                <a-box src = ./sofa.jpeg position = "0 1.25 0" height = "1" width = "1" depth = "5"></a-box>
+                <a-box src = ./sofa.jpeg position = "0 0 0" height = "1.5" width = "1" depth = "7"></a-box>
+                <a-cylinder src = ./sofa.jpeg height = "1" radius = "1" position = "0 0.75 -2.5" rotation = "0 0 90"></a-cylinder>
+                <a-cylinder src = ./sofa.jpeg height = "1" radius = "1" position = "0 0.75 2.5" rotation = "0 0 90"></a-cylinder>
+            </a-box>
+            <a-entity position = "0.75 0 3" >
+                <a-box src = ./sofa.jpeg position = "0 0 0" height = "1" width = "2.5" depth = "1"></a-box>
+                <a-box src = ./sofa.jpeg position = "0 0.75 0" height = "0.5" width = "2.5" depth = "1"></a-box>
+                <a-box src = ./sofa.jpeg position = "-1.5 0 0" height = "1" width = "0.5" depth = "1"></a-box>
+                <a-cylinder src = ./sofa.jpeg height = "1" radius = "0.5" position = "-1.25 0.5 0" rotation = "90 0 0"></a-cylinder>
+            </a-entity>
+        </a-entity>
+
+        <a-entity visible = "true" >
+        <a-plane height = "10" width = "15" rotation = "-90 0 0" position = "0 0 0" color = "white" src = "floor.jpeg" ></a-plane>
+        <a-plane height = "7" width = "15" rotation = "0 0 0" position = "0 3.5 -5" color = "grey" src = "wall3.jpg" ></a-plane>
+        <a-plane height = "7" width = "10" rotation = "0 -90 0" position = "7.5 3.5 0" src = "wall2.jpeg"></a-plane>
+        <a-plane height = "7" width = "10" rotation = "0 90 0" position = "-7.5 3.5 0" src = "wall.jpg" color = "red" ></a-plane>
+        </a-entity>
+    </a-scene>
+</body>
+
+</html>
